@@ -1,0 +1,84 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="common_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:backgroundDimEnabled">false</item><!--模糊 -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!--送礼物 字体放大-->
+    <declare-styleable name="MagicTextView">
+        <attr name="innerShadowColor" format="color" />
+        <attr name="innerShadowRadius" format="float" />
+        <attr name="innerShadowDx" format="float" />
+        <attr name="innerShadowDy" format="float" />
+        <attr name="outerShadowColor" format="color" />
+        <attr name="outerShadowRadius" format="float" />
+        <attr name="outerShadowDx" format="float" />
+        <attr name="outerShadowDy" format="float" />
+        <attr name="typeface" format="string" />
+        <attr name="foreground" format="reference|color" />
+        <attr name="strokeWidth" format="float" />
+        <attr name="strokeMiter" format="float" />
+        <attr name="strokeColor" format="color" />
+        <attr name="strokeJoinStyle">
+            <enum name="miter" value="0" />
+            <enum name="bevel" value="1" />
+            <enum name="round" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <!-- 圆形头像 -->
+    <declare-styleable name="CustomRoundView">
+        <attr name="border_width1" format="dimension"></attr>
+        <attr name="border_color1" format="color"></attr>
+    </declare-styleable>
+
+    <!--水平线-->
+    <style name="line_gray">
+        <item name="android:background">@color/gray_6c</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="line_gray.0">
+        <item name="android:layout_height">0.5dp</item>
+    </style>
+
+    <style name="text_black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="text_black.12">
+        <item name="android:textSize">12dp</item>
+    </style>
+    <style name="text_black.13">
+        <item name="android:textSize">13dp</item>
+    </style>
+
+
+    <style name="text_white">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="text_white.10">
+        <item name="android:textSize">10dp</item>
+    </style>
+    <style name="text_white.11">
+        <item name="android:textSize">11dp</item>
+    </style>
+    <style name="text_white.12">
+        <item name="android:textSize">12dp</item>
+    </style>
+    <style name="text_white.14">
+        <item name="android:textSize">14dp</item>
+    </style>
+    <style name="text_white.15">
+        <item name="android:textSize">15dp</item>
+    </style>
+</resources>

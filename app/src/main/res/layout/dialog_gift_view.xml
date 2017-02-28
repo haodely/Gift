@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.example.gift.view.GiftGridView
+        android:id="@+id/dialog_gift_gv_gift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="4"
+        android:visibility="visible">
+    </com.example.gift.view.GiftGridView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@color/black"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:src="@mipmap/ic_launcher" />
+        <TextView
+            style="@style/text_white.14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="映币："
+            />
+        <TextView
+            android:id="@+id/dialog_gift_tv_bi"
+            style="@style/text_white.15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            />
+        <Button
+            android:id="@+id/dialog_gift_btn_gifts"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@color/white_F"
+            android:background="@color/colorAccent"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_gravity="right"
+            android:text="赠送" />
+    </LinearLayout>
+
+
+</LinearLayout>

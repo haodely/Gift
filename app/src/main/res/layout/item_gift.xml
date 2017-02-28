@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rlparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingRight="15dp">
+
+        <LinearLayout
+            android:id="@+id/gift_ll_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_radius_top_black"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            >
+
+            <TextView
+                android:id="@+id/item_gift_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Johnny"
+                android:textColor="@android:color/white"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/item_gift_tv_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android工程师"
+                android:textColor="@android:color/white"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <com.example.gift.view.CustomRoundView
+            android:id="@+id/crvheadimage"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/login_logo_new"
+             />
+        <!--app:border_color1="@color/colorPrimary"
+            app:border_width1="1dp"-->
+
+        <ImageView
+            android:id="@+id/gift_img_gift"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_toRightOf="@+id/gift_ll_name"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/ic_launcher"
+            />
+        <com.example.gift.view.MagicTextView
+            android:id="@+id/giftNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/gift_img_gift"
+            android:includeFontPadding="false"
+            android:text="x1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:strokeColor="@android:color/white"
+            app:strokeJoinStyle="miter"
+            app:strokeWidth="2" />
+    </RelativeLayout>
+
+    <com.example.gift.view.CustomRoundView
+        android:id="@+id/ivgift"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:layout_alignRight="@id/rlparent"
+        android:src="@mipmap/login_logo_new" />
+
+
+
+</RelativeLayout>

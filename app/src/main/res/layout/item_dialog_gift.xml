@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:fitsSystemWindows="true" >
+    <View
+        android:visibility="invisible"
+        style="@style/line_gray.0" />
+
+    <RelativeLayout
+        android:id="@+id/item_dialog_gift_ll_gift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/item_dialog_gift_img_gift"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_launcher"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_dialog_gift_img_gift"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                style="@style/text_black.13"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:visibility="gone"
+                android:src="@mipmap/ic_launcher"
+                />
+            <TextView
+                android:id="@+id/item_dialog_gift_tv_coins"
+                style="@style/text_white.12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#800080"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="1"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/item_dialog_gift_img_select"
+            style="@style/text_black.13"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:visibility="visible"
+            android:src="@mipmap/live_gift_select"
+            />
+    </RelativeLayout>
+</LinearLayout>
